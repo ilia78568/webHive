@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Image} from "./components/Image";
+import {ImageTypes} from "./components/Image/constants";
+import Intro from "./components/Intro";
+import Upload from "./components/Upload/Upload";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/*<Image type={ImageTypes.introCircles}/>*/}
+      {/*<Image type={ImageTypes.introBlocks}/>*/}
+      {/*<Image width={55} height={60} type={ImageTypes.companyLogo}/>*/}
+      {/*<Image type={ImageTypes.companyName}/>*/}
+      {/*<Image type={ImageTypes.successIcon}/>*/}
+      {/*<Image type={ImageTypes.checkItem}/>*/}
+      {/*<Image type={ImageTypes.maskGroup}/>*/}
+      {/*<Image type={ImageTypes.maskGroupRegistration}/>*/}
+        <Intro />
+        {/*<Upload />*/}
     </div>
   );
 }
